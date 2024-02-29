@@ -1,31 +1,25 @@
-### API de Vendas
-Esta API permite acessar os dados de vendas de uma base de dados fictícia.
+### Sales API
+This API allows you to access a json that reports total sales made, through a query.
 
-## Requisitos
+## Technologies Used
 
-Python 3.x
-Flask
+- Python 🐍
+- Flask
+- Pandas
+- Requests
 
-Pandas
+## Clone this repository:
 
-Instalação
-
-Clone este repositório:
-
-bash
-Copy code
-git clone https://github.com/davifernandodias/api-consumption-one-metodh.git
-
-Para fazer uma requisição de dados de vendas, utilize o endpoint /get_sales. Você pode passar parâmetros opcionais na URL para filtrar os resultados. 
+> `git clone` https://github.com/davifernandodias/total-invoice-cost-api
+- pip install Flask
+- pip install requests
+#
+> To make a request for sales data, use the /get_sales endpoint.
 
 
-### Exemplo
-python
-Copy code
-import requests
+### Example
+> url = 'http://localhost:5000/get_sales'
+response = requests.get(url)
+print(response)
 
-url = 'http://localhost:5000/get_sales'
-params = {'date': '2024-02-14'}
-response = requests.get(url, params=params)
-
-Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
+## Contributions are welcome! Feel free to open an issue or send a pull request.
